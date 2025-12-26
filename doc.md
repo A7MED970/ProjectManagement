@@ -327,6 +327,54 @@ These outputs serve as direct inputs to:
 - **Network Diagram development**
 - **Estimating Activity Durations refinement**
 - **Project Schedule Development**
+
+---
+
+## 5. Network Diagram
+
+The Network Diagram is a graphical representation of the logical relationships among project activities. It is developed after the completion of **Defining Activities** and **Sequencing Activities**, and it visually illustrates the flow of work required to complete the project.
+
+The diagram represents activities as nodes and shows the dependencies between them using arrows. For the CampusConnect Mobile Application project, the network diagram is based primarily on **Finish-to-Start (FS)** relationships.
+
+---
+
+### 5.1 Purpose of the Network Diagram
+
+The Network Diagram is used to:
+- Visualize the logical sequence of project activities  
+- Identify activities that can be performed in parallel  
+- Serve as a foundation for **Critical Path Analysis**  
+- Support the development of a realistic project schedule  
+
+---
+
+### 5.2 Network Diagram Representation
+
+> **[Network Diagram will be inserted here]**
+
+The network diagram illustrates the logical dependencies between project activities as identified during the activity sequencing process. Activities are connected using arrows to represent their relationships and execution order.
+
+---
+
+### 5.3 Description of Activity Flow
+
+- The project begins with **A-01 (Initiate Project & Charter Approval)** and proceeds sequentially through requirements definition and approval.
+- After **A-04 (Approve Requirements Baseline)**, design activities (**A-05 UI/UX Design** and **A-06 System Architecture**) are executed in parallel.
+- Development activities converge at **A-07 (SSO Authentication Module)** and then branch into multiple implementation paths.
+- Testing activities merge the development outputs and proceed sequentially through validation and deployment.
+- The project concludes with **A-16 (Project Closure)**.
+
+---
+
+### 5.4 Network Diagram Output
+
+The Network Diagram provides a clear visual model of activity dependencies and serves as a direct input to:
+- **Critical Path Analysis**
+- **Project Schedule Development**
+- **Schedule Monitoring and Control**
+
+---
+
 ## Document Approval and Sign-Off
 
 | Role | Name | Signature | Date |
