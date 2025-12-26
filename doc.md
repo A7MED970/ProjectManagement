@@ -1,3 +1,7 @@
+==================================================
+DOCUMENT 1: PROJECT CHARTER
+==================================================
+
 # PROJECT CHARTER
 
 ---
@@ -117,6 +121,10 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
+==================================================
+DOCUMENT 2: PROJECT MANAGEMENT PLAN
+==================================================
+
 # PROJECT MANAGEMENT PLAN  
 ## CampusConnect Mobile Application
 
@@ -131,6 +139,7 @@ This Project Management Plan (PMP) defines how the CampusConnect project will be
 The plan applies to all project phases and ensures delivery within scope, schedule, and budget.
 
 ### 1.3 Assumptions and Constraints
+
 **Assumptions:**  
 - Legacy system APIs remain available  
 - Stakeholders are accessible  
@@ -179,7 +188,11 @@ Covers configuration management, quality assurance, testing, documentation, and 
 
 ---
 
-## 6. Requirements Traceability Matrix (RTM)
+==================================================
+DOCUMENT 3: REQUIREMENTS TRACEABILITY MATRIX (RTM)
+==================================================
+
+# REQUIREMENTS TRACEABILITY MATRIX (RTM)
 
 | Requirement No. | Name | Category | Source | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -193,12 +206,16 @@ Covers configuration management, quality assurance, testing, documentation, and 
 
 ---
 
-## 7. Work Breakdown Structure (WBS)
+==================================================
+DOCUMENT 4: WORK BREAKDOWN STRUCTURE (WBS)
+==================================================
 
-### 7.1 WBS Overview
+# WORK BREAKDOWN STRUCTURE (WBS)
+
+## WBS Overview
 The WBS is a deliverable-oriented hierarchical decomposition of the total project scope and forms the basis for schedule, cost, and resource planning.
 
-### 7.2 WBS Hierarchy
+## WBS Hierarchy
 1.0 CampusConnect Mobile Application  
 1.1 Project Management  
 1.2 Requirements & Design  
@@ -206,18 +223,23 @@ The WBS is a deliverable-oriented hierarchical decomposition of the total projec
 1.4 Testing  
 1.5 Deployment & Launch  
 
-### 7.3 Scope Baseline
+## Scope Baseline
 The scope baseline includes the approved scope statement, WBS, and WBS dictionary.
 
 ---
 
-## 8. Defining Activities
+==================================================
+DOCUMENT 5: ACTIVITY LIST
+==================================================
 
+# ACTIVITY LIST
+
+## Defining Activities
 Defining activities involves identifying the specific actions required to produce the project deliverables in sufficient detail to enable accurate schedule and resource estimation.
 
 ---
 
-### 8.1 Activity List
+## Activity List
 
 | Activity ID | Activity Name | Description |
 | :--- | :--- | :--- |
@@ -236,7 +258,7 @@ Defining activities involves identifying the specific actions required to produc
 
 ---
 
-### 8.2 Activity Attributes
+## Activity Attributes
 
 | Activity ID | Predecessors | Relationship | Resources | Constraints | Assumptions |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -254,6 +276,10 @@ Defining activities involves identifying the specific actions required to produc
 | A-12 | A-11 | FS | PM, IT Team | Store approval | No rejection |
 
 ---
+
+==================================================
+APPENDIX: APPROVALS & TEAM
+==================================================
 
 ## Document Approval and Sign-Off
 
