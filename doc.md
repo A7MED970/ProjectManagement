@@ -1,96 +1,295 @@
-
-# PROJECT CHARTER: CampusConnect Mobile Application
-
-**Date:** October 24, 2025  
-**Sponsor:** Dr. Ahmed Shalaby, University Dean of Student Affairs  
-**Project Manager:** Ahmed Shaaban  
+# PROJECT CHARTER
 
 ---
 
-## 1. Executive Summary & Business Case
-The University currently relies on four disparate legacy systems for student services (Grades, News, Transit, and Course Registration). Feedback from the Student Union indicates that 40% of students find the current systems difficult to navigate on mobile devices, leading to missed registration deadlines and lower engagement. The CampusConnect project will consolidate these services into a single, unified iOS and Android mobile application to improve accessibility and the student experience.
+## 1. Project Name and Description
 
-## 2. Project Goal
-To design, develop, and launch a fully functional mobile portal (CampusConnect) that allows students to access critical university services via single sign-on (SSO) by the start of the Fall Semester.
+**Project Name:** CampusConnect Mobile Application  
 
-## 3. Project Objectives (Success Criteria)
-* **Adoption:** Achieve 1,500 unique student downloads within 30 days of launch.
-* **Performance:** App load time must be under 3 seconds on 4G/5G networks.
-* **Reliability:** 99.9% uptime during the course registration period.
-* **Budget:** Complete the project within the allocated $50,000 budget.
+**Description:**  
+The University currently relies on multiple legacy systems to deliver student services such as Grades, Campus News, Transportation, and Course Registration. Feedback from the Student Union indicates that 40% of students struggle to use these systems on mobile devices, resulting in missed deadlines and reduced engagement.
 
-## 4. High-Level Scope
-* **In-Scope:** Native iOS/Android development, SSO Integration, Gradebook, Bus Tracker, Course Registration, News Feed, and UAT (50 students).
-* **Out-of-Scope:** Web/Desktop redesign, Tuition payments (Phase 2), Faculty/Staff interface.
-
-## 5. High-Level Budget
-| Category | Allocation |
-| :--- | :--- |
-| Personnel | $30,000 |
-| Software/Licenses | $10,000 |
-| Marketing/Training | $5,000 |
-| Contingency Reserve (10%) | $5,000 |
-| **Total Authorization** | **$50,000 USD** |
+The CampusConnect project aims to consolidate these services into a single, unified mobile application for iOS and Android platforms, improving accessibility, usability, and overall student experience.
 
 ---
 
-## 6. Requirements Traceability Matrix (RTM)
+## 2. Vision and Purpose (Objectives)
 
+**Vision:**  
+To provide students with a seamless, mobile-first digital platform that serves as a single point of access for all essential university services.
 
-
-| Req ID | Requirement Description | Priority | WBS ID | Test Case ID | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| REQ-001 | Authentication (SSO) | High | 3.1 | TC-AUTH-01 | Active |
-| REQ-002 | Gradebook Integration | High | 3.2 | TC-ACAD-05 | Active |
-| REQ-003 | Course Registration | High | 3.3 | TC-REG-02 | Active |
-| REQ-004 | Campus Map (GPS) | Medium | 3.4 | TC-MAP-08 | Active |
-| REQ-005 | Push Notifications | Medium | 3.5 | TC-NOTIF-10 | Active |
-| REQ-006 | Performance (<3s) | High | 4.2 | TC-PERF-01 | Active |
-| REQ-007 | Privacy (TLS 1.3) | High | 2.2 | TC-SEC-03 | Active |
+**Objectives:**  
+- Improve accessibility and ease of use of university services for students.  
+- Increase student engagement with digital services.  
+- Reduce missed registration deadlines.  
+- Deliver a secure, reliable, and high-performing mobile application within the approved budget and timeline.
 
 ---
 
-## 7. Work Breakdown Structure (WBS)
-1.  **1.0 Project Management** (Charter, PMP, Reporting, Closure)
-2.  **2.0 Requirements & Design** (Stakeholder Interviews, UI/UX Wireframes, Architecture)
-3.  **3.0 Development** (SSO Module, Academic Module, Campus Services, Backend Setup)
-4.  **4.0 Testing** (Unit, SIT, Performance, UAT, Bug Fixing)
-5.  **5.0 Deployment & Launch** (App Store Submission, Marketing, Go-Live Support)
+## 3. Project Scope
+
+**In Scope:**  
+- Development of native mobile applications for iOS and Android.  
+- Secure Single Sign-On (SSO) integration with the University authentication system.  
+- Core application modules:
+  - Gradebook View  
+  - Live Campus Bus Tracker  
+  - Course Registration System  
+  - Campus News Feed  
+- User Acceptance Testing (UAT) with a pilot group of 50 students.
+
+**Out of Scope:**  
+- Web-based (desktop) portal redesign.  
+- Tuition payment processing (planned for Phase 2).  
+- Faculty and staff system interfaces.
 
 ---
 
-## 8. Activity List & Network Diagram Logic
-
-| Activity ID | WBS Ref | Activity Name | Predecessors | Relationship |
-| :--- | :--- | :--- | :--- | :--- |
-| A-1 | 2.1.1 | Stakeholder Interviews | Start | - |
-| A-2 | 2.2.1 | Design UX Wireframes | A-1 | FS |
-| A-3 | 2.3.1 | Define Database Schema | A-1 | FS |
-| A-4 | 2.3.2 | Secure API Access | A-1 | FS |
-| A-5 | 3.4.1 | Set Up Dev Environment | A-3 | FS |
-| A-6 | 3.1.1 | Develop SSO Login | A-2, A-4, A-5 | FS |
-| A-7 | 3.2.1 | Develop Gradebook | A-6 | FS |
-| A-8 | 3.2.2 | Develop Registration | A-6 | FS |
-| A-9 | 3.3.1 | Develop Campus Maps | A-5 | FS |
-| A-10 | 4.1.0 | Integration Testing | A-7, A-8, A-9 | FS |
-| A-11 | 4.4.0 | Conduct UAT (Beta) | A-10 | FS |
-| A-12 | 5.1.0 | Submit to App Stores | A-11 | FS |
-| A-13 | 5.2.2 | Launch Marketing | A-12 | FS |
-
-
+## 4. Key Stakeholders
+- Project Sponsor: Dean of Student Affairs  
+- University IT Department  
+- Registrar’s Office  
+- Transportation Office  
+- Student Union  
+- Students  
+- Student Clubs and Organizations  
+- Mobile Application Development Team  
 
 ---
 
-## 9. Gantt Chart (Schedule Data)
+## 5. Identified Risks and Constraints
 
-| Activity ID | Activity Name | Start Date | End Date | Duration |
-| :--- | :--- | :--- | :--- | :--- |
-| A-1 | Stakeholder Interviews | M1, W1 | M1, W2 | 2 Weeks |
-| A-2 | Design UX Wireframes | M1, W3 | M2, W1 | 3 Weeks |
-| A-6 | Develop SSO Login | M2, W2 | M2, W4 | 3 Weeks |
-| A-7 | Develop Gradebook | M3, W1 | M3, W4 | 4 Weeks |
-| A-8 | Develop Registration | M4, W1 | M4, W4 | 4 Weeks |
-| A-10 | Integration Testing | M5, W1 | M5, W2 | 2 Weeks |
-| A-11 | Conduct UAT (Beta) | M5, W3 | M5, W4 | 2 Weeks |
-| A-12 | Submit to App Stores | M6, W1 | M6, W2 | 2 Weeks |
-| A-13 | Launch Marketing | M6, W3 | M6, W4 | 2 Weeks |
+**Identified Risks:**  
+- Technical Risk: Legacy system APIs may have slow response times, requiring caching or middleware solutions.  
+- Schedule Risk: Delays in Apple App Store or Google Play Store approval processes may affect the launch date.  
+- Privacy and Compliance Risk: Handling sensitive student data requires strict compliance with FERPA and GDPR regulations.
+
+**Constraints:**  
+- Fixed project budget of $50,000 USD.  
+- Mandatory launch before the start of the Fall Semester.  
+- Compliance with university IT security and data protection standards.
+
+---
+
+## 6. Project Budget
+
+**Total Authorized Budget:** $50,000 USD  
+
+- Personnel Costs: $30,000  
+- Software and Licensing: $10,000  
+- Marketing and Training: $5,000  
+- Contingency Reserve (10%): $5,000  
+
+---
+
+## 7. Project Team Roles and Responsibilities
+
+- **Project Sponsor:**  
+  Provides strategic direction, approves funding, and authorizes major project decisions.
+
+- **Project Manager (Ahmed Shaaban):**  
+  Responsible for overall project planning, execution, monitoring, and control. Authorized to allocate resources, manage risks, coordinate stakeholders, and make day-to-day decisions to ensure successful project delivery.
+
+- **Mobile Developers:**  
+  - Omar Emad Sholkamy  
+  - Ahmed Fahmy  
+  Responsible for developing native iOS and Android application features according to approved requirements.
+
+- **Backend / Integration Developer:**  
+  - Omar Isleem  
+  Responsible for backend services, API integrations with legacy systems, SSO implementation, and performance optimization.
+
+- **Quality Assurance (QA) Engineer:**  
+  - Nadeem Shokry  
+  Responsible for test planning, functional and integration testing, defect tracking, and supporting User Acceptance Testing (UAT).
+
+- **University IT Team:**  
+  Provides infrastructure support, security compliance oversight, and deployment readiness.
+
+- **Student Pilot Group:**  
+  Participates in User Acceptance Testing and provides feedback prior to full application launch.
+
+---
+
+## 8. Project Timeline and Milestones
+
+- Phase 1 (Month 1, Week 1): Project Charter approval  
+- Phase 2 (Month 2, Week 2): Requirements and design approval  
+- Phase 3 (Month 4, Week 4): Development completion  
+- Phase 4 (Month 5, Week 2): Beta testing and UAT  
+- Phase 5 (Month 6, Week 4): Final App Store release  
+
+---
+
+## 9. Performance Indicators for Success
+
+- At least 1,500 unique student downloads within 30 days of launch.  
+- Application load time under 3 seconds on 4G/5G networks.  
+- 99.9% uptime during course registration periods.  
+- Project completed within the approved $50,000 USD budget and planned schedule.
+
+---
+
+# PROJECT MANAGEMENT PLAN  
+## CampusConnect Mobile Application
+
+---
+
+## 1. Overview
+
+### 1.1 Purpose
+The purpose of this Project Management Plan (PMP) is to define how the CampusConnect Mobile Application project will be planned, executed, monitored, controlled, and closed. This document coordinates all subsidiary planning documents and guides project execution and control.
+
+### 1.2 Scope and Objectives
+This plan applies to all phases of the CampusConnect project. Its objectives are to ensure controlled execution, effective coordination, and successful delivery within scope, schedule, and budget.
+
+### 1.3 Assumptions and Constraints
+**Assumptions:**  
+- Legacy system APIs will remain available throughout the project.  
+- Stakeholders will be available for reviews and approvals.  
+- App store review timelines will follow standard durations.
+
+**Constraints:**  
+- Fixed budget of $50,000 USD  
+- Mandatory launch before the Fall Semester  
+- Compliance with FERPA, GDPR, and university IT policies
+
+### 1.4 Project Deliverables
+- iOS and Android CampusConnect applications  
+- Backend integration services  
+- Test plans and reports  
+- User documentation  
+- Deployment and release package
+
+### 1.5 Schedule and Budget Summary
+- Project Duration: 6 months  
+- Total Budget: $50,000 USD  
+
+### 1.6 Evolution of the Plan
+This plan may be updated through formal change control as the project progresses.
+
+### Document Ownership
+This Project Management Plan is developed, maintained, and updated by the Project Manager in collaboration with the project team. The plan is reviewed and formally approved by the Project Sponsor. Any changes to this document are subject to the project’s change control process.
+
+---
+
+## 2. Project Organization
+
+### 2.1 External Interfaces
+- University Administration  
+- University IT Department  
+- Apple App Store and Google Play Store  
+
+### 2.2 Internal Structure
+The project follows a centralized structure led by the Project Manager with support from development, QA, and IT teams.
+
+### 2.3 Roles and Responsibilities
+Roles and responsibilities are defined in the Project Charter and enforced throughout project execution.
+
+---
+
+## 3. Managerial Process Plan
+
+### 3.1 Start-Up Plans
+- Estimation based on similar mobile projects  
+- Defined staffing and resource allocation  
+- Required tool and license acquisition  
+- Team onboarding and training
+
+### 3.2 Work Plan
+- Work activities aligned with the Work Breakdown Structure (WBS)  
+- Resource and budget allocation per phase  
+- Milestone-based scheduling
+
+### 3.3 Control Plan
+- Weekly status meetings  
+- Milestone reviews  
+- Formal change control process
+
+### 3.4 Risk Management Plan
+- Continuous risk identification and assessment  
+- Mitigation and contingency planning  
+- Risk monitoring throughout the lifecycle
+
+### 3.5 Closeout Plan
+- Final acceptance of deliverables  
+- Documentation of lessons learned  
+- Formal administrative closure
+
+---
+
+## 4. Technical Process Plans
+
+### 4.1 Process Model
+A phased lifecycle with iterative development and testing cycles.
+
+### 4.2 Methods, Tools, and Techniques
+- Mobile development frameworks  
+- REST-based backend services  
+- Version control systems  
+- Issue and task tracking tools
+
+### 4.3 Infrastructure Plan
+- Development and testing environments  
+- Secure backend infrastructure  
+- Authentication and data protection mechanisms
+
+### 4.4 Product Acceptance Plan
+- Defined acceptance criteria  
+- Successful completion of UAT  
+- Formal stakeholder sign-off
+
+---
+
+## 5. Supporting Process Plans
+
+### 5.1 Configuration Management Plan
+- Version control for code and documentation  
+- Controlled baselines and change tracking
+
+### 5.2 Verification and Validation Plan
+- Unit testing  
+- Integration testing  
+- System and acceptance testing
+
+### 5.3 Documentation Plan
+- Technical documentation  
+- User guides  
+- Support documentation
+
+### 5.4 Quality Assurance Plan
+- Compliance with coding and testing standards  
+- Phase-based quality reviews
+
+### 5.5 Reviews and Audits
+- Design and code reviews  
+- Milestone audits
+
+### 5.6 Problem Resolution Plan
+- Issue logging and prioritization  
+- Root cause analysis and corrective actions
+
+### 5.7 Subcontractor Management Plan
+- Not applicable
+
+### 5.8 Process Improvement Plan
+- Continuous improvement through retrospectives  
+- Documentation of best practices
+
+---
+
+## Document Approval and Sign-Off
+
+| Role | Name | Signature | Date |
+| :--- | :--- | :--- | :--- |
+| Project Sponsor | Dr. Ahmed Shalaby |  |  |
+| Project Manager | Ahmed Shaaban |  |  |
+
+---
+
+## References
+- Project Charter: CampusConnect Mobile Application  
+- IEEE Software Project Management Plan (SPMP) Guidelines  
+- University IT Policies
+
+---
