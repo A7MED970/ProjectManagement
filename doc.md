@@ -324,40 +324,21 @@ The diagram represents activities as nodes and shows the dependencies between th
 
 ---
 
-### 5.1 Purpose of the Network Diagram
 
-The Network Diagram is used to:
-- Visualize the logical sequence of project activities  
-- Identify activities that can be performed in parallel  
-- Serve as a foundation for **Critical Path Analysis**  
-- Support the development of a realistic project schedule  
+### 5.1 Network Diagram Representation
 
----
-
-### 5.2 Network Diagram Representation
-
-> **[Network Diagram will be inserted here]**
-
+  ![Diagram](NetworkDiagram.jpg)
 The network diagram illustrates the logical dependencies between project activities as identified during the activity sequencing process. Activities are connected using arrows to represent their relationships and execution order.
 
 ---
 
-### 5.3 Description of Activity Flow
+### 5.2 Description of Activity Flow
 
 - The project begins with **A-01 (Initiate Project & Charter Approval)** and proceeds sequentially through requirements definition and approval.
 - After **A-04 (Approve Requirements Baseline)**, design activities (**A-05 UI/UX Design** and **A-06 System Architecture**) are executed in parallel.
 - Development activities converge at **A-07 (SSO Authentication Module)** and then branch into multiple implementation paths.
 - Testing activities merge the development outputs and proceed sequentially through validation and deployment.
 - The project concludes with **A-16 (Project Closure)**.
-
----
-
-### 5.4 Network Diagram Output
-
-The Network Diagram provides a clear visual model of activity dependencies and serves as a direct input to:
-- **Critical Path Analysis**
-- **Project Schedule Development**
-- **Schedule Monitoring and Control**
 
 ---
 
