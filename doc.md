@@ -241,48 +241,55 @@ The scope baseline is used as a reference point for scope validation and scope c
 
 ---
 
+## 4. Activity List
 
-## 4. Defining Activities
+### 4.1 Defining Activities – Overview
 
-Defining activities involves identifying the specific actions required to produce the project deliverables in sufficient detail to enable accurate schedule, cost, and resource estimation.
+Defining activities is a key process within **Project Schedule Management** that involves identifying and documenting the specific actions required to produce the project deliverables. These activities are derived directly from the Work Breakdown Structure (WBS) and are defined in sufficient detail to support accurate schedule development, resource estimation, and project control.
+
+According to the project schedule management processes covered in the lecture, the primary output of this process is the **Activity List**, which includes all activities that must be performed to complete the project successfully.
+
+Each activity is assigned:
+- A unique activity identifier  
+- A clear and concise activity name  
+- A brief description of the work involved  
+
+These activities will later be used for sequencing, duration estimation, and schedule development.
 
 ---
 
-### 8.1 Activity List
+### 4.2 Activity List
 
 | Activity ID | Activity Name | Description |
 | :--- | :--- | :--- |
-| A-01 | Conduct Stakeholder Interviews | Gather functional and non-functional requirements |
-| A-02 | Define System Requirements | Document and approve requirements |
-| A-03 | Design UI/UX Wireframes | Create application interface designs |
-| A-04 | Design System Architecture | Define backend and integration architecture |
-| A-05 | Develop SSO Module | Implement authentication and login |
-| A-06 | Develop Academic Modules | Implement gradebook and registration |
-| A-07 | Develop Campus Services | Implement bus tracker and news feed |
-| A-08 | Backend API Integration | Integrate legacy systems |
-| A-09 | Unit Testing | Test individual components |
-| A-10 | Integration Testing | Test combined modules |
-| A-11 | User Acceptance Testing | Conduct beta testing with students |
-| A-12 | App Store Deployment | Submit and publish applications |
+| A-01 | Initiate Project & Charter Approval | Review, finalize, and formally approve the Project Charter |
+| A-02 | Conduct Stakeholder Interviews | Identify and gather functional and non-functional requirements from stakeholders |
+| A-03 | Document System Requirements | Analyze, document, and validate project requirements |
+| A-04 | Approve Requirements Baseline | Review and formally approve the requirements baseline |
+| A-05 | Design UI/UX Wireframes | Create wireframes and prototypes for the mobile application |
+| A-06 | Design System Architecture | Define backend architecture and integration approach |
+| A-07 | Develop SSO Authentication Module | Implement secure Single Sign-On functionality |
+| A-08 | Develop Academic Modules | Implement Gradebook and Course Registration modules |
+| A-09 | Develop Campus Services Modules | Implement Campus Bus Tracker and News Feed modules |
+| A-10 | Backend API Integration | Integrate legacy university systems with the mobile application |
+| A-11 | Unit Testing | Test individual application components |
+| A-12 | Integration Testing | Test interaction between application modules and backend systems |
+| A-13 | User Acceptance Testing (UAT) | Conduct beta testing with selected student users |
+| A-14 | Fix Defects from UAT | Resolve issues identified during UAT |
+| A-15 | App Store Deployment | Submit and publish the application to App Store and Google Play |
+| A-16 | Project Closure | Final documentation, handover, and project sign-off |
 
 ---
 
-### 8.2 Activity Attributes
+### 4.3 Notes on Activity List Usage
 
-| Activity ID | Predecessors | Relationship | Resources | Constraints | Assumptions |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| A-01 | Start | FS | PM, Stakeholders | Stakeholder availability | Stakeholders cooperate |
-| A-02 | A-01 | FS | PM, Analysts | Approval timelines | Requirements stable |
-| A-03 | A-02 | FS | UI/UX Designer | Design standards | UI tools available |
-| A-04 | A-02 | FS | Backend Developer | Architecture policies | APIs accessible |
-| A-05 | A-03, A-04 | FS | Backend Developer | Security compliance | SSO specs approved |
-| A-06 | A-05 | FS | Mobile Developers | Module dependencies | Reusable components |
-| A-07 | A-05 | FS | Mobile Developers | GPS accuracy | Maps API available |
-| A-08 | A-04 | FS | Backend Developer | Legacy system limits | APIs stable |
-| A-09 | A-06, A-07 | FS | QA Engineer | Test environment | Code complete |
-| A-10 | A-09, A-08 | FS | QA Engineer | Integration readiness | Stable build |
-| A-11 | A-10 | FS | Students, QA | Student availability | Positive participation |
-| A-12 | A-11 | FS | PM, IT Team | Store approval | No rejection |
+The Activity List serves as a foundational input to subsequent schedule management processes, including:
+- **Sequencing Activities**
+- **Estimating Activity Durations**
+- **Developing the Project Schedule**
+- **Controlling the Schedule**
+
+Milestones such as *Project Charter Approval*, *Requirements Approval*, and *App Store Release* are represented as significant events that mark progress and typically have zero duration.
 
 ---
 
