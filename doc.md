@@ -316,20 +316,6 @@ Activity sequencing is based on technical dependencies, best practices, and proj
 
 ---
 
-### 4.5 Output of Activity Definition and Sequencing
-
-The outputs of defining and sequencing activities include:
-- A complete **Activity List** with estimated durations
-- Documented logical relationships between activities
-- Clear traceability between **WBS elements and activities**
-
-These outputs serve as direct inputs to:
-- **Network Diagram development**
-- **Estimating Activity Durations refinement**
-- **Project Schedule Development**
-
----
-
 ## 5. Network Diagram
 
 The Network Diagram is a graphical representation of the logical relationships among project activities. It is developed after the completion of **Defining Activities** and **Sequencing Activities**, and it visually illustrates the flow of work required to complete the project.
