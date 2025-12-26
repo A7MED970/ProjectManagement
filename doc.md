@@ -1,8 +1,9 @@
-# PROJECT CHARTER
+
+# 1. PROJECT CHARTER
 
 ---
 
-## 1. Project Name and Description
+### 1.1 Project Name and Description
 
 **Project Name:** CampusConnect Mobile Application  
 
@@ -13,7 +14,7 @@ The CampusConnect project aims to consolidate these services into a single, unif
 
 ---
 
-## 2. Vision and Purpose (Objectives)
+### 1.2 Vision and Purpose (Objectives)
 
 **Vision:**  
 To provide students with a seamless, mobile-first digital platform that serves as a single point of access for all essential university services.
@@ -26,7 +27,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 3. Project Scope
+### 1.3 Project Scope
 
 **In Scope:**  
 - Development of native mobile applications for iOS and Android.  
@@ -45,7 +46,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 4. Key Stakeholders
+### 1.4 Key Stakeholders
 - Project Sponsor: Dean of Student Affairs  
 - University IT Department  
 - Registrar’s Office  
@@ -57,7 +58,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 5. Identified Risks and Constraints
+### 1.5 Identified Risks and Constraints
 
 **Identified Risks:**  
 - Technical Risk: Legacy system APIs may have slow response times, requiring caching or middleware solutions.  
@@ -71,7 +72,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 6. Project Budget
+### 1.6 Project Budget
 
 **Total Authorized Budget:** $50,000 USD  
 
@@ -82,7 +83,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 7. Project Team Roles and Responsibilities
+### 1.7 Project Team Roles and Responsibilities
 
 - **Project Sponsor:**  
   Provides strategic direction, approves funding, and authorizes major project decisions.
@@ -98,7 +99,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 8. Project Timeline and Milestones
+### 1.8 Project Timeline and Milestones
 
 - Phase 1 (Month 1, Week 1): Project Charter approval  
 - Phase 2 (Month 2, Week 2): Requirements and design approval  
@@ -108,7 +109,7 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-## 9. Performance Indicators for Success
+### 1.9 Performance Indicators for Success
 
 - At least 1,500 unique student downloads within 30 days of launch.  
 - Application load time under 3 seconds on 4G/5G networks.  
