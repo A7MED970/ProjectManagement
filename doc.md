@@ -179,7 +179,7 @@ The project is divided into the following technical phases:
 * **IEEE Std 1058:** Guidelines used for this Software Project Management Plan.
 * **FERPA/GDPR Policies:** Standards for protecting student data privacy.
 
-## 6. Requirements Traceability Matrix (RTM)
+## 3. Requirements Traceability Matrix (RTM)
 
 | Requirement No. | Name | Category | Source | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -193,7 +193,7 @@ The project is divided into the following technical phases:
 
 ---
 
-## 7. Work Breakdown Structure (WBS)
+## 4. Work Breakdown Structure (WBS)
 
 ### 7.1 WBS Overview
 The WBS is a deliverable-oriented hierarchical decomposition of the total project scope and forms the basis for schedule, cost, and resource planning.
