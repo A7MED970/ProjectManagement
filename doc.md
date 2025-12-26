@@ -179,7 +179,7 @@ The project is divided into the following technical phases:
 * **IEEE Std 1058:** Guidelines used for this Software Project Management Plan.
 * **FERPA/GDPR Policies:** Standards for protecting student data privacy.
 
-## 3. Project Scope Management
+# 3. Project Scope Management
 
 Project Scope Management includes the processes required to ensure that the project includes **all the work required, and only the work required**, to successfully complete the CampusConnect Mobile Application project.
 
