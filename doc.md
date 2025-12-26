@@ -118,67 +118,66 @@ To provide students with a seamless, mobile-first digital platform that serves a
 
 ---
 
-# PROJECT MANAGEMENT PLAN  
-## CampusConnect Mobile Application
 
----
+# 2. Software Project Management Plan (SPMP)
 
-## 1. Overview
+## 2.1 Introduction / Overview of the Project
+**Project Name:** CampusConnect Mobile Application  
+**Description:** This project involves the development of a unified mobile portal for iOS and Android to centralize the University's legacy student services.  
+**Purpose:** To eliminate the 40% navigation difficulty rate reported by students using current disparate systems and to ensure students meet critical academic deadlines via a mobile-first interface.  
+**Objectives:** * Consolidate Grades, News, Transit, and Course Registration into one app.
+* Achieve 1,500 student downloads within 30 days of launch.
+* Maintain a performance threshold of <3s load time.
 
-### 1.1 Purpose
-This Project Management Plan (PMP) defines how the CampusConnect project will be planned, executed, monitored, controlled, and closed.
 
-### 1.2 Scope and Objectives
-The plan applies to all project phases and ensures delivery within scope, schedule, and budget.
 
-### 1.3 Assumptions and Constraints
-**Assumptions:**  
-- Legacy system APIs remain available  
-- Stakeholders are accessible  
-- Standard app store approval timelines apply  
+## 2.2 Project Organization
+The project is managed under a **Matrix Structure**, utilizing experts from the University’s Students.
+* **2.2.1 Project Sponsor:** Dr. Ahmed Shalaby (Dean of Student Affairs) – Funding and high-level approval.
+* **2.2.2 Project Manager:** Ahmed Shaban – Leads integration, scheduling, and stakeholder management.
+* **2.2.3 Development Team:** Omar Sholkamy & Ahmed Fahmy (Mobile); Omar Isleem (Backend/APIs).
+* **2.2.4 Quality Assurance:** Nadeem Shokry – Leads System Integration Testing (SIT) and UAT.
 
-**Constraints:**  
-- Fixed $50,000 budget  
-- Fall semester deadline  
-- FERPA/GDPR compliance  
+## 2.3 Management and Technical Processes
+### 2.3.1 Management Processes
+* **Monitoring & Controlling:** Weekly reports are used to monitor the "Big Picture" and ensure all knowledge areas are coordinated.
+* **Integrated Change Control (ICC):** Any change to the project scope, such as adding a "Tuition Payment" module, requires a formal Change Request and Sponsor sign-off to prevent budget overruns.
 
-### 1.4 Project Deliverables
-- Mobile applications (iOS & Android)  
-- Backend services  
-- Test reports  
-- User documentation  
 
-### 1.5 Schedule and Budget Summary
-- Duration: 6 months  
-- Budget: $50,000 USD  
 
-### 1.6 Evolution of the Plan
-This plan may be updated through formal change control.
+### 2.3.2 Technical Processes
+* **Lifecycle Model:** A Hybrid approach using Waterfall for initial requirements and Agile Sprints for coding individual modules.
+* **Technical Infrastructure:** Development will be hosted on AWS, using GitHub for version control and Jira for tracking software bugs.
 
-### Document Ownership
-This Project Management Plan is developed and maintained by the Project Manager and approved by the Project Sponsor.
+## 2.4 Work to be Done
+The project is divided into the following technical phases:
+* **Requirement Analysis:** Mapping data fields from legacy systems to the new mobile API.
+* **UI/UX Design:** Developing wireframes and prototypes for student feedback.
+* **Implementation:** Coding the SSO Authentication, Gradebook, and GPS Transit modules.
+* **Testing:** Conducting internal integration tests and a 50-student Beta (UAT) group.
 
----
+## 2.5 Schedule and Budget Information
+### 2.5.1 Milestone Schedule
+* **M1:** Project Charter & PMP Approval – Month 1
+* **M2:** Design Sign-off – Month 2
+* **M3:** Development Completion – Month 4
+* **M4:** UAT & Beta Testing – Month 5
+* **M5:** Official App Store Release – Month 6
 
-## 2. Project Organization
-Centralized structure led by the Project Manager with development, QA, and IT support.
+### 2.5.2 Budget Summary
+| Category | Allocated Amount |
+| :--- | :--- |
+| **Personnel** | $30,000 |
+| **Software/Licenses** | $10,000 |
+| **Marketing** | $5,000 |
+| **Contingency Reserve (10%)** | $5,000 |
+| **Total Project Budget** | **$50,000** |
 
----
-
-## 3. Managerial Process Plan
-Includes startup planning, work planning, control mechanisms, risk management, and project closeout.
-
----
-
-## 4. Technical Process Plans
-Defines lifecycle model, tools, infrastructure, and acceptance approach.
-
----
-
-## 5. Supporting Process Plans
-Covers configuration management, quality assurance, testing, documentation, and continuous improvement.
-
----
+## 2.6 References to Other Project Planning Documents
+* **Project Charter:** Finalized and signed on Oct 24, 2025.
+* **Risk Register:** Tracks legacy API instability and App Store rejection risks.
+* **IEEE Std 1058:** Guidelines used for this Software Project Management Plan.
+* **FERPA/GDPR Policies:** Standards for protecting student data privacy.
 
 ## 6. Requirements Traceability Matrix (RTM)
 
