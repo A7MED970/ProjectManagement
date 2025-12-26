@@ -241,58 +241,58 @@ The scope baseline is used as a reference point for scope validation and scope c
 
 ---
 
-## 4. Activity List
+# 4. Project Schedule Management
 
-### 4.1 Defining Activities – Overview
+## 4.1 Activity List
+The following activities represent the decomposition of the WBS work packages into specific actions required to produce the project deliverables.
 
-Defining activities is a key process within **Project Schedule Management** that involves identifying and documenting the specific actions required to produce the project deliverables. These activities are derived directly from the Work Breakdown Structure (WBS) and are defined in sufficient detail to support accurate schedule development, resource estimation, and project control.
+| Activity ID | Activity Name | Description | Duration (Est. Days) |
+| :--- | :--- | :--- | :--- |
+| **A-01** | Charter & PMP Approval | Formal sign-off of the project roadmap and authority. | 3 |
+| **A-02** | Stakeholder Interviews | Gather technical data specs from Registrar and Transit offices. | 7 |
+| **A-03** | Requirements Documentation | Formalizing the RTM and functional specification document. | 5 |
+| **A-04** | UI/UX Design & Prototyping | Creating high-fidelity wireframes for student feedback. | 12 |
+| **A-05** | Backend API Mapping | Defining how AWS middleware connects to legacy Banner systems. | 8 |
+| **A-06** | SSO & Security Coding | Implementing OAuth2 for secure student login. | 10 |
+| **A-07** | Academic Module Dev | Developing the Gradebook and Course Registration logic. | 20 |
+| **A-08** | Campus Services Dev | Developing the GPS Bus Tracker and News Feed parser. | 15 |
+| **A-09** | System Integration | Merging frontend modules with the backend API layer. | 10 |
+| **A-10** | Unit & Alpha Testing | Internal technical testing of individual modules. | 7 |
+| **A-11** | User Acceptance Testing (UAT) | Controlled pilot with 50 students to validate usability. | 10 |
+| **A-12** | App Store Submission | Handling the 14-day review cycle for Apple and Google. | 14 |
+| **A-13** | Marketing & Launch | Distribution of user guides and official campus release. | 5 |
 
-According to the project schedule management processes covered in the lecture, the primary output of this process is the **Activity List**, which includes all activities that must be performed to complete the project successfully.
 
-Each activity is assigned:
-- A unique activity identifier  
-- A clear and concise activity name  
-- A brief description of the work involved  
 
-These activities will later be used for sequencing, duration estimation, and schedule development.
+## 4.2 Activity Attributes & Sequencing
+Following the **Precedence Diagramming Method (PDM)** from Lecture 6, the table below defines the logical dependencies (Finish-to-Start) necessary for the Network Diagram.
 
----
+| Activity ID | Predecessors | Resources | Logical Relationship |
+| :--- | :--- | :--- | :--- |
+| **A-01** | — | PM, Sponsor | Project Start |
+| **A-02** | A-01 | PM, Stakeholders | FS (Cannot interview without authority) |
+| **A-03** | A-02 | PM, IT Team | FS (Specs depend on interview data) |
+| **A-04** | A-03 | UI/UX Designer | FS (Design requires approved specs) |
+| **A-05** | A-03 | Backend Dev | FS (Arch depends on technical specs) |
+| **A-06** | A-04, A-05 | Mobile/Backend Dev | FS (Coding requires design & arch) |
+| **A-07** | A-06 | Mobile/Backend Dev | FS (Academic data requires login/SSO) |
+| **A-08** | A-06 | Mobile Dev | FS (Campus services require login/SSO) |
+| **A-09** | A-07, A-08 | Backend Dev | FS (Integration follows module coding) |
+| **A-10** | A-09 | QA Engineer | FS (Testing follows integration) |
+| **A-11** | A-10 | QA, Students | FS (UAT requires a stable Alpha build) |
+| **A-12** | A-11 | PM, IT Team | FS (Store submission follows student sign-off) |
+| **A-13** | A-12 | Marketing, PM | FS (Marketing launch once app is live) |
 
-### 4.2 Activity List
 
-| Activity ID | Activity Name | Description |
-| :--- | :--- | :--- |
-| A-01 | Initiate Project & Charter Approval | Review, finalize, and formally approve the Project Charter |
-| A-02 | Conduct Stakeholder Interviews | Identify and gather functional and non-functional requirements from stakeholders |
-| A-03 | Document System Requirements | Analyze, document, and validate project requirements |
-| A-04 | Approve Requirements Baseline | Review and formally approve the requirements baseline |
-| A-05 | Design UI/UX Wireframes | Create wireframes and prototypes for the mobile application |
-| A-06 | Design System Architecture | Define backend architecture and integration approach |
-| A-07 | Develop SSO Authentication Module | Implement secure Single Sign-On functionality |
-| A-08 | Develop Academic Modules | Implement Gradebook and Course Registration modules |
-| A-09 | Develop Campus Services Modules | Implement Campus Bus Tracker and News Feed modules |
-| A-10 | Backend API Integration | Integrate legacy university systems with the mobile application |
-| A-11 | Unit Testing | Test individual application components |
-| A-12 | Integration Testing | Test interaction between application modules and backend systems |
-| A-13 | User Acceptance Testing (UAT) | Conduct beta testing with selected student users |
-| A-14 | Fix Defects from UAT | Resolve issues identified during UAT |
-| A-15 | App Store Deployment | Submit and publish the application to App Store and Google Play |
-| A-16 | Project Closure | Final documentation, handover, and project sign-off |
 
----
+## 4.3 Schedule Milestone List
+These zero-duration milestones will be used to track progress against the project baseline.
 
-### 4.3 Notes on Activity List Usage
-
-The Activity List serves as a foundational input to subsequent schedule management processes, including:
-- **Sequencing Activities**
-- **Estimating Activity Durations**
-- **Developing the Project Schedule**
-- **Controlling the Schedule**
-
-Milestones such as *Project Charter Approval*, *Requirements Approval*, and *App Store Release* are represented as significant events that mark progress and typically have zero duration.
-
----
-
+* **M1: Project Kickoff** (Start of Month 1)
+* **M2: Design Freeze** (End of Month 2)
+* **M3: Code Complete** (End of Month 4)
+* **M4: UAT Sign-off** (End of Month 5)
+* **M5: Official Launch** (End of Month 6)
 ## Document Approval and Sign-Off
 
 | Role | Name | Signature | Date |
