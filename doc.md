@@ -342,6 +342,45 @@ The network diagram illustrates the logical dependencies between project activit
 
 ---
 
+## 6. Gantt Chart
+
+The Gantt Chart is a bar-chart representation of the project schedule that displays project activities along a timeline. It shows the planned start and finish dates of activities and highlights overlaps, sequencing, and overall project duration.
+
+The Gantt Chart for the CampusConnect Mobile Application project is developed after completing the following schedule management processes:
+- Defining Activities  
+- Sequencing Activities  
+- Estimating Activity Durations  
+- Network Diagram and Critical Path Analysis  
+
+---
+
+### 6.1 Gantt Chart Representation
+
+> **[Gantt Chart will be inserted here]**
+
+The Gantt Chart illustrates project activities on the vertical axis and time periods on the horizontal axis. Each activity is represented by a horizontal bar whose length corresponds to its estimated duration.
+
+Milestones such as *Project Charter Approval*, *Requirements Approval*, and *App Store Release* are represented as significant zero-duration points on the chart.
+
+---
+
+### 6.2 Relationship to Network Diagram and Critical Path
+
+The Gantt Chart is derived from the Network Diagram and incorporates the results of the Critical Path Analysis. While the Network Diagram emphasizes logical dependencies between activities, the Gantt Chart focuses on the time dimension of the project.
+
+Activities on the critical path are closely monitored, as any delay in these activities will directly impact the overall project completion date.
+
+---
+
+### 6.3 Gantt Chart Usage in Schedule Control
+
+During project execution, the Gantt Chart serves as a key tool for schedule monitoring and control. Actual start and finish dates are compared against planned dates to identify variances and take corrective actions when necessary.
+
+The Gantt Chart is updated regularly to reflect project progress and approved schedule changes.
+
+---
+
+
 ## Document Approval and Sign-Off
 
 | Role | Name | Signature | Date |
