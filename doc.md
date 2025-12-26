@@ -179,7 +179,18 @@ The project is divided into the following technical phases:
 * **IEEE Std 1058:** Guidelines used for this Software Project Management Plan.
 * **FERPA/GDPR Policies:** Standards for protecting student data privacy.
 
-## 3. Requirements Traceability Matrix (RTM)
+## 3. Project Scope Management
+
+Project Scope Management includes the processes required to ensure that the project includes **all the work required, and only the work required**, to successfully complete the CampusConnect Mobile Application project.
+
+This section covers how project requirements are traced and how the total project work is structured and controlled.
+
+---
+
+### 3.1 Requirements Traceability Matrix (RTM)
+**Category:** Project Document (Requirements Management)
+
+The Requirements Traceability Matrix (RTM) is used to ensure that all project requirements are identified, documented, tracked, and fulfilled throughout the project lifecycle. It provides traceability between requirements, their sources, and their current implementation status.
 
 | Requirement No. | Name | Category | Source | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -193,12 +204,15 @@ The project is divided into the following technical phases:
 
 ---
 
-## 4. Work Breakdown Structure (WBS)
+### 3.2 Work Breakdown Structure (WBS)
+**Category:** Scope Baseline
 
-### 7.1 WBS Overview
-The WBS is a deliverable-oriented hierarchical decomposition of the total project scope and forms the basis for schedule, cost, and resource planning.
+The Work Breakdown Structure (WBS) is a deliverable-oriented hierarchical decomposition of the total project scope. It defines all the work required to complete the CampusConnect Mobile Application project and forms the foundation for schedule, cost, and resource planning.
 
-### 7.2 WBS Hierarchy
+#### 3.2.1 WBS Overview
+The WBS ensures that no project work is overlooked and that all deliverables are clearly defined and manageable.
+
+#### 3.2.2 WBS Hierarchy
 1.0 CampusConnect Mobile Application  
 1.1 Project Management  
 1.2 Requirements & Design  
@@ -206,14 +220,17 @@ The WBS is a deliverable-oriented hierarchical decomposition of the total projec
 1.4 Testing  
 1.5 Deployment & Launch  
 
-### 7.3 Scope Baseline
-The scope baseline includes the approved scope statement, WBS, and WBS dictionary.
+#### 3.2.3 Scope Baseline
+The scope baseline consists of:
+- Approved Project Scope Statement  
+- Work Breakdown Structure (WBS)  
+- WBS Dictionary  
 
 ---
 
-## 8. Defining Activities
+## 4. Defining Activities
 
-Defining activities involves identifying the specific actions required to produce the project deliverables in sufficient detail to enable accurate schedule and resource estimation.
+Defining activities involves identifying the specific actions required to produce the project deliverables in sufficient detail to enable accurate schedule, cost, and resource estimation.
 
 ---
 
