@@ -190,7 +190,14 @@ This section covers how project requirements are traced and how the total projec
 ### 3.1 Requirements Traceability Matrix (RTM)
 **Category:** Project Document (Requirements Management)
 
-The Requirements Traceability Matrix (RTM) is used to ensure that all project requirements are identified, documented, tracked, and fulfilled throughout the project lifecycle. It provides traceability between requirements, their sources, and their current implementation status.
+The Requirements Traceability Matrix (RTM) is a key project document used during the **Collect Requirements** process to ensure that all project requirements are clearly identified, documented, and tracked throughout the project lifecycle.
+
+In alignment with the Project Charter and stakeholder inputs, the RTM provides end-to-end traceability by linking each requirement to its source and monitoring its implementation status. This ensures that:
+- No approved requirement is overlooked or omitted.
+- All functional and non-functional requirements remain aligned with project objectives.
+- Scope validation and scope control activities can be effectively supported during later project phases.
+
+The RTM also serves as a control mechanism to assess the impact of proposed changes and helps prevent scope creep by ensuring that only approved requirements are implemented.
 
 | Requirement No. | Name | Category | Source | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -207,10 +214,14 @@ The Requirements Traceability Matrix (RTM) is used to ensure that all project re
 ### 3.2 Work Breakdown Structure (WBS)
 **Category:** Scope Baseline
 
-The Work Breakdown Structure (WBS) is a deliverable-oriented hierarchical decomposition of the total project scope. It defines all the work required to complete the CampusConnect Mobile Application project and forms the foundation for schedule, cost, and resource planning.
+The Work Breakdown Structure (WBS) is a deliverable-oriented hierarchical decomposition of the total project scope and is developed during the **Create WBS** process. It defines **all the work required, and only the work required**, to successfully deliver the CampusConnect Mobile Application.
+
+The WBS is created using the **decomposition technique**, where major project deliverables are progressively subdivided into smaller, more manageable components known as work packages. These work packages form the foundation for accurate schedule estimation, cost planning, resource allocation, and change control.
+
+By organizing project work in this structured manner, the WBS ensures clarity of responsibilities, improves communication among stakeholders, and reduces the risk of scope creep.
 
 #### 3.2.1 WBS Overview
-The WBS ensures that no project work is overlooked and that all deliverables are clearly defined and manageable.
+The WBS provides a structured view of the project deliverables and ensures that no project work is overlooked while maintaining alignment with the approved project scope statement.
 
 #### 3.2.2 WBS Hierarchy
 1.0 CampusConnect Mobile Application  
@@ -221,12 +232,15 @@ The WBS ensures that no project work is overlooked and that all deliverables are
 1.5 Deployment & Launch  
 
 #### 3.2.3 Scope Baseline
-The scope baseline consists of:
+The scope baseline represents the approved version of the project scope and consists of:
 - Approved Project Scope Statement  
 - Work Breakdown Structure (WBS)  
 - WBS Dictionary  
 
+The scope baseline is used as a reference point for scope validation and scope control throughout the project lifecycle.
+
 ---
+
 
 ## 4. Defining Activities
 
