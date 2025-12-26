@@ -241,58 +241,92 @@ The scope baseline is used as a reference point for scope validation and scope c
 
 ---
 
-# 4. Project Schedule Management
+## 4. Activity List and Sequencing Activities
 
-## 4.1 Activity List
-The following activities represent the decomposition of the WBS work packages into specific actions required to produce the project deliverables.
+### 4.1 Defining Activities – Overview
 
-| Activity ID | Activity Name | Description | Duration (Est. Days) |
+Defining activities is a core process within **Project Schedule Management** that involves identifying the specific actions required to produce the project deliverables. Activities are derived directly from the Work Breakdown Structure (WBS) and are defined in sufficient detail to support accurate schedule development, sequencing, and control.
+
+The primary output of this process is the **Activity List**, which includes all activities necessary to complete the project, along with their identifiers, descriptions, durations, and alignment with the WBS hierarchy.
+
+---
+
+### 4.2 Activity List
+
+| Activity ID | Activity Name | Description | WBS ID | Duration (Days) |
+| :--- | :--- | :--- | :--- | :--- |
+| A-01 | Initiate Project & Charter Approval | Review, finalize, and formally approve the Project Charter | 1.1 | 2 |
+| A-02 | Conduct Stakeholder Interviews | Gather functional and non-functional requirements from stakeholders | 1.2 | 5 |
+| A-03 | Document System Requirements | Analyze, document, and validate system requirements | 1.2 | 5 |
+| A-04 | Approve Requirements Baseline | Review and formally approve requirements baseline | 1.2 | 2 |
+| A-05 | Design UI/UX Wireframes | Create UI/UX wireframes and prototypes | 1.2 | 7 |
+| A-06 | Design System Architecture | Define backend and integration architecture | 1.2 | 6 |
+| A-07 | Develop SSO Authentication Module | Implement secure authentication and login | 1.3 | 8 |
+| A-08 | Develop Academic Modules | Implement gradebook and course registration modules | 1.3 | 12 |
+| A-09 | Develop Campus Services Modules | Implement bus tracker and news feed modules | 1.3 | 10 |
+| A-10 | Backend API Integration | Integrate legacy systems with backend services | 1.3 | 8 |
+| A-11 | Unit Testing | Test individual system components | 1.4 | 6 |
+| A-12 | Integration Testing | Test interaction between system modules | 1.4 | 5 |
+| A-13 | User Acceptance Testing (UAT) | Conduct beta testing with student users | 1.4 | 5 |
+| A-14 | Fix Defects from UAT | Resolve issues identified during UAT | 1.4 | 4 |
+| A-15 | App Store Deployment | Submit and publish application to app stores | 1.5 | 3 |
+| A-16 | Project Closure | Final documentation, handover, and sign-off | 1.1 | 2 |
+
+---
+
+### 4.3 Sequencing Activities
+
+Sequencing activities involves identifying and documenting the logical relationships among project activities. This process defines the order in which activities must be performed and provides a foundation for developing the **Network Diagram** and the **Project Schedule**.
+
+Activity sequencing is based on technical dependencies, best practices, and project constraints identified during planning.
+
+#### 4.3.1 Types of Dependencies
+
+- **Mandatory Dependencies (Hard Logic):**  
+  Activities that must follow a specific order due to the nature of the work, such as completing requirements documentation before system design.
+
+- **Discretionary Dependencies (Soft Logic):**  
+  Activities sequenced based on preferred practices, such as completing UI/UX design before development.
+
+- **External Dependencies:**  
+  Activities dependent on external entities, such as App Store approval processes.
+
+---
+
+### 4.4 Activity Sequencing Table
+
+| Activity ID | Activity Name | Predecessor(s) | Relationship |
 | :--- | :--- | :--- | :--- |
-| **A-01** | Charter & PMP Approval | Formal sign-off of the project roadmap and authority. | 3 |
-| **A-02** | Stakeholder Interviews | Gather technical data specs from Registrar and Transit offices. | 7 |
-| **A-03** | Requirements Documentation | Formalizing the RTM and functional specification document. | 5 |
-| **A-04** | UI/UX Design & Prototyping | Creating high-fidelity wireframes for student feedback. | 12 |
-| **A-05** | Backend API Mapping | Defining how AWS middleware connects to legacy Banner systems. | 8 |
-| **A-06** | SSO & Security Coding | Implementing OAuth2 for secure student login. | 10 |
-| **A-07** | Academic Module Dev | Developing the Gradebook and Course Registration logic. | 20 |
-| **A-08** | Campus Services Dev | Developing the GPS Bus Tracker and News Feed parser. | 15 |
-| **A-09** | System Integration | Merging frontend modules with the backend API layer. | 10 |
-| **A-10** | Unit & Alpha Testing | Internal technical testing of individual modules. | 7 |
-| **A-11** | User Acceptance Testing (UAT) | Controlled pilot with 50 students to validate usability. | 10 |
-| **A-12** | App Store Submission | Handling the 14-day review cycle for Apple and Google. | 14 |
-| **A-13** | Marketing & Launch | Distribution of user guides and official campus release. | 5 |
+| A-01 | Initiate Project & Charter Approval | — | — |
+| A-02 | Conduct Stakeholder Interviews | A-01 | FS |
+| A-03 | Document System Requirements | A-02 | FS |
+| A-04 | Approve Requirements Baseline | A-03 | FS |
+| A-05 | Design UI/UX Wireframes | A-04 | FS |
+| A-06 | Design System Architecture | A-04 | FS |
+| A-07 | Develop SSO Authentication Module | A-05, A-06 | FS |
+| A-08 | Develop Academic Modules | A-07 | FS |
+| A-09 | Develop Campus Services Modules | A-07 | FS |
+| A-10 | Backend API Integration | A-06 | FS |
+| A-11 | Unit Testing | A-08, A-09 | FS |
+| A-12 | Integration Testing | A-10, A-11 | FS |
+| A-13 | User Acceptance Testing (UAT) | A-12 | FS |
+| A-14 | Fix Defects from UAT | A-13 | FS |
+| A-15 | App Store Deployment | A-14 | FS |
+| A-16 | Project Closure | A-15 | FS |
 
+---
 
+### 4.5 Output of Activity Definition and Sequencing
 
-## 4.2 Activity Attributes & Sequencing
-Following the **Precedence Diagramming Method (PDM)** from Lecture 6, the table below defines the logical dependencies (Finish-to-Start) necessary for the Network Diagram.
+The outputs of defining and sequencing activities include:
+- A complete **Activity List** with estimated durations
+- Documented logical relationships between activities
+- Clear traceability between **WBS elements and activities**
 
-| Activity ID | Predecessors | Resources | Logical Relationship |
-| :--- | :--- | :--- | :--- |
-| **A-01** | — | PM, Sponsor | Project Start |
-| **A-02** | A-01 | PM, Stakeholders | FS (Cannot interview without authority) |
-| **A-03** | A-02 | PM, IT Team | FS (Specs depend on interview data) |
-| **A-04** | A-03 | UI/UX Designer | FS (Design requires approved specs) |
-| **A-05** | A-03 | Backend Dev | FS (Arch depends on technical specs) |
-| **A-06** | A-04, A-05 | Mobile/Backend Dev | FS (Coding requires design & arch) |
-| **A-07** | A-06 | Mobile/Backend Dev | FS (Academic data requires login/SSO) |
-| **A-08** | A-06 | Mobile Dev | FS (Campus services require login/SSO) |
-| **A-09** | A-07, A-08 | Backend Dev | FS (Integration follows module coding) |
-| **A-10** | A-09 | QA Engineer | FS (Testing follows integration) |
-| **A-11** | A-10 | QA, Students | FS (UAT requires a stable Alpha build) |
-| **A-12** | A-11 | PM, IT Team | FS (Store submission follows student sign-off) |
-| **A-13** | A-12 | Marketing, PM | FS (Marketing launch once app is live) |
-
-
-
-## 4.3 Schedule Milestone List
-These zero-duration milestones will be used to track progress against the project baseline.
-
-* **M1: Project Kickoff** (Start of Month 1)
-* **M2: Design Freeze** (End of Month 2)
-* **M3: Code Complete** (End of Month 4)
-* **M4: UAT Sign-off** (End of Month 5)
-* **M5: Official Launch** (End of Month 6)
+These outputs serve as direct inputs to:
+- **Network Diagram development**
+- **Estimating Activity Durations refinement**
+- **Project Schedule Development**
 ## Document Approval and Sign-Off
 
 | Role | Name | Signature | Date |
