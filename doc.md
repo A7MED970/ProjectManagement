@@ -431,6 +431,67 @@ In this project, the RAM maps **project activities** to **project roles**, ensur
 
 The RAM is referenced throughout the project lifecycle to ensure that responsibilities remain clear and that resources are effectively utilized. It supports communication, performance monitoring, and conflict resolution within the project team.
 
+---
+
+## 9. RACI Chart
+
+The RACI Chart is a responsibility assignment tool used in **Project Resource Management** to clearly define roles and responsibilities for project activities. It ensures that all stakeholders understand their level of involvement in each activity and helps prevent confusion, overlaps, or gaps in accountability.
+
+RACI is a commonly used form of the Responsibility Assignment Matrix (RAM) and is especially effective in projects involving multiple stakeholders and functional teams.
+
+---
+
+### 9.1 RACI Definitions
+
+The RACI model defines four types of responsibility:
+
+- **R – Responsible:** The individual(s) who perform the work required to complete the activity  
+- **A – Accountable:** The individual who is ultimately answerable for the correct completion of the activity (only one per activity)  
+- **C – Consulted:** Individuals whose opinions or expertise are sought before decisions or actions are taken  
+- **I – Informed:** Individuals who are kept informed about progress or outcomes  
+
+---
+
+### 9.2 Purpose of the RACI Chart
+
+The RACI Chart is used to:
+- Clarify roles and responsibilities across project activities  
+- Ensure clear accountability for all activities  
+- Improve communication among project stakeholders  
+- Support effective coordination and decision-making  
+
+---
+
+### 9.3 RACI Chart for the CampusConnect Project
+
+| Activity ID | Activity Name | Project Manager | Development Team | QA Team | Project Sponsor |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| A-01 | Initiate Project & Charter Approval | R | I | I | A |
+| A-02 | Conduct Stakeholder Interviews | A | R | I | C |
+| A-03 | Document System Requirements | A | R | C | I |
+| A-04 | Approve Requirements Baseline | R | C | I | A |
+| A-05 | Design UI/UX Wireframes | A | R | C | I |
+| A-06 | Design System Architecture | A | R | C | I |
+| A-07 | Develop SSO Authentication Module | A | R | I | I |
+| A-08 | Develop Academic Modules | A | R | I | I |
+| A-09 | Develop Campus Services Modules | A | R | I | I |
+| A-10 | Backend API Integration | A | R | I | I |
+| A-11 | Unit Testing | A | C | R | I |
+| A-12 | Integration Testing | A | C | R | I |
+| A-13 | User Acceptance Testing (UAT) | A | C | R | I |
+| A-14 | Fix Defects from UAT | A | R | C | I |
+| A-15 | App Store Deployment | R | C | I | A |
+| A-16 | Project Closure | R | I | I | A |
+
+---
+
+### 9.4 Use of the RACI Chart in Project Execution
+
+The RACI Chart is referenced throughout project execution to ensure that responsibilities remain clear and that communication flows effectively among stakeholders. It also supports conflict resolution and helps the project manager monitor accountability.
+
+The RACI Chart may be updated if project roles or responsibilities change as part of approved change control.
+
+---
 
 ## Document Approval and Sign-Off
 
