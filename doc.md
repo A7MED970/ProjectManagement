@@ -356,7 +356,7 @@ The Gantt Chart for the CampusConnect Mobile Application project is developed af
 
 ### 6.1 Gantt Chart Representation
 
-> **[Gantt Chart will be inserted here]**
+> ![Gantt Chart](PM Project.gif)
 
 The Gantt Chart illustrates project activities on the vertical axis and time periods on the horizontal axis. Each activity is represented by a horizontal bar whose length corresponds to its estimated duration.
 
