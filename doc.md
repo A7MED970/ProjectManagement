@@ -379,6 +379,17 @@ During project execution, the Gantt Chart serves as a key tool for schedule moni
 The Gantt Chart is updated regularly to reflect project progress and approved schedule changes.
 
 ---
+# 7. The Critical Path 
+
+Based on the durations and dependencies in the activity list, the manual sequence of the critical path is:
+
+**A-01** (2d) $\rightarrow$ **A-02** (5d) $\rightarrow$ **A-03** (5d) $\rightarrow$ **A-04** (2d) $\rightarrow$ **A-05** (7d) $\rightarrow$ **A-07** (8d) $\rightarrow$ **A-08** (12d) $\rightarrow$ **A-11** (6d) $\rightarrow$ **A-12** (5d) $\rightarrow$ **A-13** (5d) $\rightarrow$ **A-14** (4d) $\rightarrow$ **A-15** (3d) $\rightarrow$ **A-16** (2d)
+
+**Total Critical Path Duration: 66 Working Days**
+
+![Critical Path Diagram](CriticalPath.jpg)
+
+---
 
 ## 8. Responsibility Assignment Matrix (RAM)
 
