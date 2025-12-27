@@ -380,6 +380,57 @@ The Gantt Chart is updated regularly to reflect project progress and approved sc
 
 ---
 
+## 8. Responsibility Assignment Matrix (RAM)
+
+The Responsibility Assignment Matrix (RAM) is a project management tool used within **Project Resource Management** to assign project work to the appropriate organizational units or roles. It ensures that every work package or activity defined in the Work Breakdown Structure (WBS) has clear responsibility assigned to it.
+
+According to the Project Resource Management processes, the RAM links **WBS elements** with the **Organizational Breakdown Structure (OBS)**, providing a clear view of who is responsible for performing and managing project work.
+
+---
+
+### 8.1 Purpose of the RAM
+
+The RAM is used to:
+- Clearly define responsibility for project work  
+- Ensure that all work packages and activities are assigned  
+- Improve coordination between project roles and teams  
+- Support accountability and resource planning  
+
+---
+
+### 8.2 RAM Structure
+
+In this project, the RAM maps **project activities** to **project roles**, ensuring that responsibility for each activity is clearly identified.
+
+---
+
+### 8.3 Responsibility Assignment Matrix (RAM)
+
+| Activity ID | Activity Name | Project Manager | Development Team | QA Team | Project Sponsor |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| A-01 | Initiate Project & Charter Approval | R |  |  | A |
+| A-02 | Conduct Stakeholder Interviews | A | R |  | C |
+| A-03 | Document System Requirements | A | R | C |  |
+| A-04 | Approve Requirements Baseline | R | C |  | A |
+| A-05 | Design UI/UX Wireframes | A | R | C |  |
+| A-06 | Design System Architecture | A | R | C |  |
+| A-07 | Develop SSO Authentication Module | A | R |  |  |
+| A-08 | Develop Academic Modules | A | R |  |  |
+| A-09 | Develop Campus Services Modules | A | R |  |  |
+| A-10 | Backend API Integration | A | R |  |  |
+| A-11 | Unit Testing | A | C | R |  |
+| A-12 | Integration Testing | A | C | R |  |
+| A-13 | User Acceptance Testing (UAT) | A | C | R |  |
+| A-14 | Fix Defects from UAT | A | R | C |  |
+| A-15 | App Store Deployment | R | C |  | A |
+| A-16 | Project Closure | R |  |  | A |
+
+---
+
+### 8.4 Use of RAM in Resource Management
+
+The RAM is referenced throughout the project lifecycle to ensure that responsibilities remain clear and that resources are effectively utilized. It supports communication, performance monitoring, and conflict resolution within the project team.
+
 
 ## Document Approval and Sign-Off
 
