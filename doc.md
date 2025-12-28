@@ -503,6 +503,38 @@ The RACI Chart is referenced throughout project execution to ensure that respons
 The RACI Chart may be updated if project roles or responsibilities change as part of approved change control.
 
 ---
+# Diagram 10: Cause-and-Effect (Ishikawa) Diagram
+
+### **Problem Statement: Failure to Launch by Deadline**
+This diagram (FishBone.jpg) identifies the root causes that could prevent the **CampusConnect** app from meeting its mandatory launch date. Identifying these factors allows the team to focus on quality control and risk mitigation.
+
+---
+
+### **1. Resources (People)**
+* **Pilot Group Availability:** Potential low participation from the **50-student pilot group** may delay the final **User Acceptance Testing (UAT)** phase.
+* **Team Over-allocation:** Key technical staff like **Omar Emad** and **Nadeen Shokry** may be distracted by other university IT requirements.
+
+### **2. Process (Management)**
+* **Scope Creep:** Stakeholder requests for extra features (e.g., Library integration) during the development phase can push the schedule past 66 days.
+* **App Store Approval Lead Times:** Underestimating the time required for Apple and Google to review and approve the app (typically 1–2 weeks).
+
+### **3. Technology (Technical)**
+* **Data Sync Latency:** Performance risks involving slow response times from the university's legacy Registrar databases.
+* **Security Complexities:** Difficulties in integrating the **Single Sign-On (SSO)** system securely across both iOS and Android.
+
+### **4. External (Environment)**
+* **Policy Changes:** Unforeseen shifts in University IT security or data protection standards mid-project.
+* **Third-Party Documentation:** Delays in receiving API technical specs from the external transportation provider for the Bus Tracker module.
+
+---
+
+### **Visual Reference**
+![FishBone.jpg](FishBone.jpg)
+
+---
+
+### **Presentation Script**
+"For Diagram 10, we used a Fishbone analysis to look at our biggest threat: missing the Fall launch. While our schedule is set for 66 days, this diagram highlights that **SSO integration** and **Scope Creep** are the highest risks to our quality and timeline. By monitoring these 'bones,' **Ahmed Shaban** can ensure the project stays on track for the Student Union's needs".
 
 ## Document Approval and Sign-Off
 
