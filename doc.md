@@ -549,10 +549,10 @@ This diagram (FishBone.jpg) identifies the root causes that could prevent the **
 
 | Name | Role | Responsibility |
 | :--- | :--- | :--- |
-| Omar Emad Sholkamy | Mobile Developer | iOS/Android development |
-| Ahmed Fahmy | Mobile Developer | iOS/Android development |
-| Omar Isleem | Backend Developer | API & backend integration |
-| Nadeem Shokry | QA Engineer | Testing and UAT support |
+| Omar Emad Sholkamy | Backend Manger |  Monitoring |
+| Ahmed Fahmy | BackEnd Developer | Deveolping|
+| Nadeem Shokry | FrontEnd Manger | Monitoring |
+| Omar Isleem | FrontEnd Developer | Deveolping |
 
 ---
 
