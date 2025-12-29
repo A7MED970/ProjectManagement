@@ -532,9 +532,7 @@ This diagram (FishBone.jpg) identifies the root causes that could prevent the **
 ![FishBone.jpg](FishBone.jpg)
 
 ---
-
-### **Presentation Script**
-"For Diagram 10, we used a Fishbone analysis to look at our biggest threat: missing the Fall launch. While our schedule is set for 66 days, this diagram highlights that **SSO integration** and **Scope Creep** are the highest risks to our quality and timeline. By monitoring these 'bones,' **Ahmed Shaban** can ensure the project stays on track for the Student Union's needs".
+**Scope Creep** are the highest risks to our quality and timeline. By monitoring these 'bones,' **Ahmed Shaban** can ensure the project stays on track for the Student Union's needs".
 
 ## Document Approval and Sign-Off
 
